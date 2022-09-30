@@ -62,7 +62,7 @@ DRIVER_FOLDER = {
 def auto_review(video_name, language_Code, subtitle_name, is_loop=False):
     try:
         # Bước 0: Tạo subtitle cho nước muốn làm. Sử dụng google dịch.
-        tils.create_foreign_subfile(video_name, language_Code)
+        # tils.create_foreign_subfile(video_name, language_Code)
         # Buoc 1:  Tu danh sach images, lay thong tin thoi gian xuat hien cua cac cau Sub
         # Sau do luu vao sub_list = [[start_time, end_time], [start_time, end_time], ...] vd = [[00:00:00:000,00:00:03:160]]
         sub_list = tils.get_sub_by_srt_file(video_name + '-vi-vi' + '.srt')
